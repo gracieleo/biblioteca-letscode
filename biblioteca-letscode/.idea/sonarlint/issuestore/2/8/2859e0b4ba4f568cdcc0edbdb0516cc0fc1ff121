@@ -1,0 +1,39 @@
+
+>
+java:S1659"#Declare "autor" on a separate line.(Šù­‹ùÿÿÿÿ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(şı´W
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ÿƒà
+S	java:S106"9Replace this use of System.out or System.err by a logger.(©’Òëşÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ôìà¨úÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ëâÒ‚úÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ú¡‘Ã
+l
+java:S3457#"Q%n should be used in place of \n to produce the platform-specific line separator.(í†‰°şÿÿÿÿ
+S	java:S106#"9Replace this use of System.out or System.err by a logger.(í†‰°şÿÿÿÿ
+S	java:S106,"9Replace this use of System.out or System.err by a logger.( ¥Çãúÿÿÿÿ
+S	java:S106-"9Replace this use of System.out or System.err by a logger.(¤‡ıÿÿÿÿ
+l
+java:S34571"Q%n should be used in place of \n to produce the platform-specific line separator.(öÔÇ±úÿÿÿÿ
+S	java:S1061"9Replace this use of System.out or System.err by a logger.(öÔÇ±úÿÿÿÿ
+S	java:S1063"9Replace this use of System.out or System.err by a logger.(Ü„„”øÿÿÿÿ
+V	java:S125<"<This block of commented-out lines of code should be removed.(ò¤ïÿÿÿÿÿ
+S	java:S106^"9Replace this use of System.out or System.err by a logger.(ò§óĞúÿÿÿÿ
+S	java:S106f"9Replace this use of System.out or System.err by a logger.(ñ€“êúÿÿÿÿ
+=
+java:S1125i"'Remove the unnecessary boolean literal.(Ã›ª•
+N	java:S106j"9Replace this use of System.out or System.err by a logger.(ÈÒˆ
+V	java:S125o"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+T	java:S106ƒ"9Replace this use of System.out or System.err by a logger.(°ÚÎ‘şÿÿÿÿ
+O	java:S106„"9Replace this use of System.out or System.err by a logger.(œ²’Û
+T	java:S106…"9Replace this use of System.out or System.err by a logger.(¯ß°¢øÿÿÿÿ
+T	java:S106†"9Replace this use of System.out or System.err by a logger.(‹üìåüÿÿÿÿ
+T	java:S106‡"9Replace this use of System.out or System.err by a logger.(ÒÉ€ûÿÿÿÿ
+T	java:S106ˆ"9Replace this use of System.out or System.err by a logger.(ªıÕ¬øÿÿÿÿ
+T	java:S106‰"9Replace this use of System.out or System.err by a logger.(ÜÜ‹Øøÿÿÿÿ
+T	java:S106Š"9Replace this use of System.out or System.err by a logger.(ï†Éÿÿÿÿÿÿ
+T	java:S106"9Replace this use of System.out or System.err by a logger.(‘³‰äüÿÿÿÿ
+R	java:S125–"<This block of commented-out lines of code should be removed.(½‰“•
+W	java:S125™"<This block of commented-out lines of code should be removed.(¤É¹¬úÿÿÿÿ
+T	java:S106¢"9Replace this use of System.out or System.err by a logger.(¬³ûØıÿÿÿÿ
+S
+java:S1144"=Remove this unused private "mostrarLivrosDisponiveis" method.(´Ò–·
