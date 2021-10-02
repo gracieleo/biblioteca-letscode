@@ -2,11 +2,16 @@ package br.com.letscode.Usuario;
 import br.com.letscode.Livro;
 import java.util.ArrayList;
 
-public class Aluno extends Usuario{
+public class Aluno implements Usuario{
+    private String nome;
+    private String matricula;
+    private String email;
     public Aluno() {
     }
     public Aluno(String nome, String matricula, String email) {
-        super(nome, matricula, email);
+        this.nome=nome;
+        this.matricula=matricula;
+        this.email=email;
     }
 
     public boolean emprestar(ArrayList<Livro> vetorLivros ) {

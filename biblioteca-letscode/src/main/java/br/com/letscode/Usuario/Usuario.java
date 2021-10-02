@@ -1,17 +1,8 @@
 package br.com.letscode.Usuario;
+import br.com.letscode.Livro;
 import java.util.ArrayList;
 
-public class Usuario {
-    String nome;
-    String matricula;
-    String email;
-    Usuario(){
-
-    }
-
-    public Usuario(String nome, String matricula, String email) {
-        this.nome = nome;
-        this.matricula = matricula;
-        this.email = email;
-    }
+public interface Usuario {
+    boolean emprestar(ArrayList<Livro> livros);
+    boolean devolver(ArrayList<Livro> livros);
 }
