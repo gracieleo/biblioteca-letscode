@@ -1,8 +1,13 @@
 package br.com.letscode.Usuario;
-import br.com.letscode.Livro;
-import java.util.ArrayList;
+import br.com.letscode.*;
+
+import java.time.LocalDate;
 
 public interface Usuario {
-    boolean emprestar(ArrayList<Livro> livros);
-    boolean devolver(ArrayList<Livro> livros);
+    void emprestar(Emprestimo emprestimo);
+
+    void devolver(RegistroLivro registroLivro,Emprestimo emprestimo, LocalDate data);
+
+
+
 }

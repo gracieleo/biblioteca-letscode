@@ -1,14 +1,17 @@
 package br.com.letscode;
 
 import java.util.Scanner;
-
+import java.util.Date;
 
 public class Aplicacao {
 
     private static Scanner sc = new Scanner(System.in);
     private static RegistroLivro rL;
     //chamar de usuario também
+    //conta dias de entrega
+    private static void contaDias(Emprestimo emprestimo){
 
+    }
 
     //add livro na lista de livros
     private static void adicionaLivro() {
