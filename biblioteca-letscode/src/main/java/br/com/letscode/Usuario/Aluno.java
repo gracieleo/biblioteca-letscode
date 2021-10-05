@@ -5,14 +5,13 @@ import br.com.letscode.RegistroLivro;
 import br.com.letscode.GerenciaDia;
 
 import java.time.LocalDate;
-import java.util.Date;
 
-public class Aluno implements Usuario{
+public class Aluno implements Usuario {
     private String nome;
     private String matricula;
     private String email;
     private Emprestimo emprestimo;
-    private int diasAtraso=0;
+    private LocalDate dataAtraso;
     private final int diasEmprestimo = 10;
 
 
@@ -49,12 +48,12 @@ public class Aluno implements Usuario{
         this.emprestimo = emprestimo;
     }
 
-    public int getDiasAtraso() {
-        return diasAtraso;
+    public LocalDate getDiasAtraso() {
+        return dataAtraso;
     }
 
-    public void setDiasAtraso(int diasAtraso) {
-        this.diasAtraso = diasAtraso;
+    public void setDiasAtraso(LocalDate dataAtraso) {
+        this.dataAtraso = dataAtraso;
     }
     public int getDiasEmprestimo() {
         return diasEmprestimo;
@@ -67,33 +66,4 @@ public class Aluno implements Usuario{
         this.matricula=matricula;
         this.email=email;
     }
-
-    public void emprestar(Emprestimo emprestimo ) {
-
-        if(emprestimo.getEmprestimo().size()>3){
-            System.out.println("Emprestimo não permitido");
-        }else if(this.emprestimo.getEmprestimo().size()<1 && emprestimo.getEmprestimo().size()<4 && emprestimo.getEmprestimo().size()>0 && getDiasAtraso()==0){
-            System.out.println("Emprestimo permitido");
-            GerenciaDia dia = new GerenciaDia();
-            dia.setDia(dia.calcularDataDevolucao( emprestimo.getDataEmprestimo(), getDiasEmprestimo()));
-            emprestimo.setDataEmprestimo(dia.getDia());
-            this.emprestimo=emprestimo;
-        }
-    }
-
-    public void devolver(RegistroLivro registroLivro,Emprestimo emprestimo, LocalDate dataDevolucao) {
-        if (emprestimo.getDataDevolucao().isBefore(dataDevolucao)){
-                while(emprestimo.getDataDevolucao().isBefore(dataDevolucao)) {
-                    emprestimo.setDataDevolucao(emprestimo.getDataDevolucao().plusDays(1));
-                    setDiasAtraso(getDiasAtraso()+1);
-                    }
-                }
-        for (Livro livro : emprestimo.getEmprestimo() ){
-            registroLivro.addLivro(livro);
-        }
-
-        setEmprestimo(null);
-    }
-
-
 }

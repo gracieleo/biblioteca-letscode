@@ -1,8 +1,15 @@
 package br.com.letscode;
 
+import br.com.letscode.Usuario.Aluno;
+import br.com.letscode.Livro;
+import br.com.letscode.GerenciaDia;
+import br.com.letscode.Usuario.Professor;
+
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Collections;
+
 
 public class RegistroLivro {
 
@@ -41,7 +48,25 @@ public class RegistroLivro {
     }
 
     //devolver livro
-    public void devolverLivro(){
+    public void devolverLivro(Object object){
+        if (object instanceof Aluno) {
+            for (Livro livro : ((Aluno) object).getEmprestimo().getEmprestimo()) {
+                rL.add(livro);
+            }
+            if(((Aluno) object).getEmprestimo().getDataDevolucao().isAfter(LocalDate.now())){
+                ((Aluno) object).setDiasAtraso(new GerenciaDia().calcularDataAtraso(LocalDate.now(),((Aluno) object).getEmprestimo().getDataDevolucao() ));
+            }
+        }
+        if (object instanceof Professor) {
+            for (Livro livro : ((Professor) object).getEmprestimo().getEmprestimo()) {
+                rL.add(livro);
+            }
+            if(((Aluno) object).getEmprestimo().getDataDevolucao().isAfter(LocalDate.now())){
+                ((Aluno) object).setDiasAtraso(new GerenciaDia().calcularDataAtraso(LocalDate.now(),((Aluno) object).getEmprestimo().getDataDevolucao() ));
+            }
+        }
+
+
 
     }
 }

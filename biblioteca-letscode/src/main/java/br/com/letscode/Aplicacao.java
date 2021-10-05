@@ -1,5 +1,10 @@
 package br.com.letscode;
 
+import br.com.letscode.Usuario.Usuario;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Scanner;
 import java.util.Date;
 
@@ -7,10 +12,19 @@ public class Aplicacao {
 
     private static Scanner sc = new Scanner(System.in);
     private static RegistroLivro rL;
+
     //chamar de usuario também
     //conta dias de entrega
-    private static void contaDias(Emprestimo emprestimo){
+    private static void contaDias(Emprestimo emprestimo) {
+    }
 
+
+    private static void emprestaLivro() {
+        System.out.println("Digite o login do usuário:");
+        String login = sc.next();
+        System.out.println("Digite a senha do usuario");
+        String senha = sc.next();
+        for ()
     }
 
     //add livro na lista de livros
@@ -61,74 +75,77 @@ public class Aplicacao {
 
     //emprestimo do livro --- aguardado lista de usuarios
     //private static void emprestarLivro() {
-      //  boolean idicador = false;
-        //boolean indicUsuario = false;
-        //int cod;
-        //int codUsuario;
-        //System.out.println("Digite o código do livro do qual quer emprestado: ");
-        //cod = sc.nextInt();
-        //sc.nextLine();
-        //Main.listarTodosUsuarios();
-        //System.out.println("Digite matricula do usuario:");
-        //codUsuario = sc.nextInt();
-        //sc.nextLine();
-        //  for (int iv = o; iv < rU.size(); iv++) {
-        //      Livro v = rL.getLivro(iv);
-        //       if (v.getIsbn() == cod && v.getDataEmprestimo() == null) {
-        //            rL.emprestaLivro(v, usuario);
-        //            System.out.println("código do livro" + v.getIsbn() + "emprestimo efetuado para" + v.getMatricula);
-        //           System.out.println("Data de emprestimo: " + v.getDataEmprestimo());
-        //            indicador = true;
-        //         }
-        //     }
-        //    if (indicador == false) {
-        //        System.out.println("Livro já emprestado.");
-        //    }
-        //    if(indicUsuario==false){
-        //        System.out.println("Usuario não encontrado.");
+    //  boolean idicador = false;
+    //boolean indicUsuario = false;
+    //int cod;
+    //int codUsuario;
+    //System.out.println("Digite o código do livro do qual quer emprestado: ");
+    //cod = sc.nextInt();
+    //sc.nextLine();
+    //Main.listarTodosUsuarios();
+    //System.out.println("Digite matricula do usuario:");
+    //codUsuario = sc.nextInt();
+    //sc.nextLine();
+    //  for (int iv = o; iv < rU.size(); iv++) {
+    //      Livro v = rL.getLivro(iv);
+    //       if (v.getIsbn() == cod && v.getDataEmprestimo() == null) {
+    //            rL.emprestaLivro(v, usuario);
+    //            System.out.println("código do livro" + v.getIsbn() + "emprestimo efetuado para" + v.getMatricula);
+    //           System.out.println("Data de emprestimo: " + v.getDataEmprestimo());
+    //            indicador = true;
+    //         }
+    //     }
+    //    if (indicador == false) {
+    //        System.out.println("Livro já emprestado.");
+    //    }
+    //    if(indicUsuario==false){
+    //        System.out.println("Usuario não encontrado.");
 //
-        //     }
-        //   }
+    //     }
+    //   }
 
 
-        public static void devolveLivro() {
-            boolean ind = false;
-            int cod2;
-            System.out.println("Digite codigo do livro que vai devolver: ");
-            cod2 = sc.nextInt();
-            sc.nextLine();
-            for (int i = 0; i < rL.size(); i++) {
-                Livro v = rL.getLivro(i);
-                if (v.getIsbn() == cod2) {
-                    v.setDataEmprestimo(null);
-                    ind = true;
-                    System.out.println("livro codigo" + v.getIsbn() + "devolvido.");
-                }
-            }
-            if (ind == false) {
-                System.out.println("Livro não encontrado.");
+    public static void devolveLivro() {
+        boolean ind = false;
+        int cod2;
+        System.out.println("Digite codigo do livro que vai devolver: ");
+        cod2 = sc.nextInt();
+        sc.nextLine();
+        for (int i = 0; i < rL.size(); i++) {
+            Livro v = rL.getLivro(i);
+            if (v.getIsbn() == cod2) {
+                v.setDataEmprestimo(null);
+                ind = true;
+                System.out.println("livro codigo" + v.getIsbn() + "devolvido.");
             }
         }
+        if (ind == false) {
+            System.out.println("Livro não encontrado.");
+        }
+    }
 
-        //private static void listarLivros()
-        //}
-
+    //private static void listarLivros()
+    //}
 
 
     public static void main(String[] args) {
         rL = new RegistroLivro();
 
-        Livro l1 = new Livro("Código Limpo","Robert C Martin");
-        Livro l2 = new Livro("Java como programar","Paulo Deitel");
-        Livro l3 = new Livro("Java para iniciantes","Hebert Schildt");
-        Livro l4 = new Livro("Algoritmos teoria e pratica","Clifford Stein");
-        Livro l5 = new Livro("Entendendo Algoritmos","Aditya B.");
+        Livro l1 = new Livro("Código Limpo", "Robert C Martin");
+        Livro l2 = new Livro("Java como programar", "Paulo Deitel");
+        Livro l3 = new Livro("Java para iniciantes", "Hebert Schildt");
+        Livro l4 = new Livro("Algoritmos teoria e pratica", "Clifford Stein");
+        Livro l5 = new Livro("Entendendo Algoritmos", "Aditya B.");
         rL.addLivro(l1);
         rL.addLivro(l2);
         rL.addLivro(l3);
         rL.addLivro(l4);
         rL.addLivro(l5);
 
+
+    }
+
+    {
         int op;
         do {
             System.out.println("Menu Biblioteca Let's Code:\n ");
@@ -165,8 +182,9 @@ public class Aplicacao {
                     System.out.println("Opção inválida! \n\n");
                     break;
             }
-        }while (op != 0);
+        } while (op != 0);
     }
 }
+
 
 
