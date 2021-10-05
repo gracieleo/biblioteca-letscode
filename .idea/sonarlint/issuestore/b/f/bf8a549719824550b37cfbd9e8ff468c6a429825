@@ -1,0 +1,8 @@
+
+<
+java:S1170"!Make this final field static too.(ùˆ þÿÿÿÿ
+£
+java:S1186H"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(™ÍƒÇøÿÿÿÿ8öÊ‰òÄ/
+£
+java:S1186M"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(’ÕÀßùÿÿÿÿ8öÊ‰òÄ/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÍÄä’øÿÿÿÿ

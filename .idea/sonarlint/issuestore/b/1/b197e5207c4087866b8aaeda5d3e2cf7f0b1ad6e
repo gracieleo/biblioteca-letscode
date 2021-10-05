@@ -1,0 +1,12 @@
+
+H
+java:S1128"+Remove this unused import 'java.util.Date'.(¸…¼ü8í‰ƒòÄ/
+†
+java:S1319"jThe type of "emprestimo" should be an interface such as "List" rather than the implementation "ArrayList".(Â²‚g8‘ä‚òÄ/
+
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ßÇÛ›8 ä‚òÄ/
+Œ
+java:S1319"jThe type of "emprestimo" should be an interface such as "List" rather than the implementation "ArrayList".(‰¾¾‘úÿÿÿÿ8 ä‚òÄ/
+;
+java:S1700
+"Rename field "emprestimo"(ÆÜØşÿÿÿÿ8 ä‚òÄ/

@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="999f67ed-4fb2-416e-a84f-27f8813fb979" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/biblioteca-letscode/src/main/java/br/com/letscode/biblioteca/AplicacaoFeriados.java" beforeDir="false" afterPath="$PROJECT_DIR$/biblioteca-letscode/src/main/java/br/com/letscode/biblioteca/AplicacaoFeriados.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/biblioteca-letscode/src/main/java/br/com/letscode/biblioteca/Livros/Aplicacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/biblioteca-letscode/src/main/java/br/com/letscode/biblioteca/Livros/Aplicacao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/biblioteca-letscode/src/main/java/br/com/letscode/biblioteca/Livros/RegistroLivro.java" beforeDir="false" afterPath="$PROJECT_DIR$/biblioteca-letscode/src/main/java/br/com/letscode/biblioteca/Livros/RegistroLivro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/biblioteca-letscode/target/classes/br/com/letscode/biblioteca/AplicacaoFeriados.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/biblioteca-letscode/target/classes/br/com/letscode/biblioteca/biblioteca/Aplicacao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/biblioteca-letscode/target/classes/br/com/letscode/biblioteca/biblioteca/Livro.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/biblioteca-letscode/target/classes/br/com/letscode/biblioteca/biblioteca/RegistroLivro.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1633389169783</updated>
       <workItem from="1633389173213" duration="6685000" />
+      <workItem from="1633399676598" duration="970000" />
     </task>
     <servers />
   </component>
