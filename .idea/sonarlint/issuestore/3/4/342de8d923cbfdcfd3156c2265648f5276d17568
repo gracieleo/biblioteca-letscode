@@ -1,0 +1,44 @@
+
+]
+java:S1659"BDeclare "autor" and all following declarations on a separate line.(¸¸ùòÿÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(—Èá‰ıÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ÿƒà
+S	java:S106"9Replace this use of System.out or System.err by a logger.(©’Òëşÿÿÿÿ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(ÜËØM
+N	java:S106"9Replace this use of System.out or System.err by a logger.(µşÄ™
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ôìà¨úÿÿÿÿ
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(ëâÒ‚úÿÿÿÿ
+S	java:S106""9Replace this use of System.out or System.err by a logger.(€·áğıÿÿÿÿ
+l
+java:S3457&"Q%n should be used in place of \n to produce the platform-specific line separator.(ÁÙÂııÿÿÿÿ
+S	java:S106&"9Replace this use of System.out or System.err by a logger.(ÁÙÂııÿÿÿÿ
+S	java:S106-"9Replace this use of System.out or System.err by a logger.( ¥Çãúÿÿÿÿ
+S	java:S106."9Replace this use of System.out or System.err by a logger.(‡Ç©şÿÿÿÿ
+g
+java:S34572"Q%n should be used in place of \n to produce the platform-specific line separator.(—‰Ë
+N	java:S1062"9Replace this use of System.out or System.err by a logger.(—‰Ë
+g
+java:S34574"Q%n should be used in place of \n to produce the platform-specific line separator.(šƒˆŒ
+N	java:S1064"9Replace this use of System.out or System.err by a logger.(šƒˆŒ
+S	java:S106="9Replace this use of System.out or System.err by a logger.(ò§óĞúÿÿÿÿ
+V	java:S125?"<This block of commented-out lines of code should be removed.(î£ú¬ûÿÿÿÿ
+S	java:S106E"9Replace this use of System.out or System.err by a logger.(½è£ışÿÿÿÿ
+B
+java:S1125G"'Remove the unnecessary boolean literal.(Áñìøÿÿÿÿ
+N	java:S106H"9Replace this use of System.out or System.err by a logger.(œäæ
+S	java:S106`"9Replace this use of System.out or System.err by a logger.(°ÚÎ‘şÿÿÿÿ
+N	java:S106a"9Replace this use of System.out or System.err by a logger.(œ²’Û
+S	java:S106b"9Replace this use of System.out or System.err by a logger.(¯ß°¢øÿÿÿÿ
+S	java:S106c"9Replace this use of System.out or System.err by a logger.(ûñ÷¤ÿÿÿÿÿ
+S	java:S106d"9Replace this use of System.out or System.err by a logger.(ÒÉ€ûÿÿÿÿ
+S	java:S106e"9Replace this use of System.out or System.err by a logger.(ªıÕ¬øÿÿÿÿ
+S	java:S106f"9Replace this use of System.out or System.err by a logger.(ÜÜ‹Øøÿÿÿÿ
+U	java:S106g"9Replace this use of System.out or System.err by a logger.(Ö‹ö8É×áïÄ/
+Z	java:S106h"9Replace this use of System.out or System.err by a logger.(ï†Éÿÿÿÿÿÿ8É×áïÄ/
+Z	java:S106n"9Replace this use of System.out or System.err by a logger.(‘³‰äüÿÿÿÿ8Ù×áïÄ/
+]	java:S125t"<This block of commented-out lines of code should be removed.(¾‚¸õûÿÿÿÿ8Ù×áïÄ/
+]	java:S125w"<This block of commented-out lines of code should be removed.(¤É¹¬úÿÿÿÿ8Ù×áïÄ/
+[	java:S106ƒ"9Replace this use of System.out or System.err by a logger.(¬³ûØıÿÿÿÿ8Ù×áïÄ/
+Y
+java:S4973B"<Strings and Boxed types should be compared using "equals()".(æ•ø¯8§ÌòïÄ/
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(›©â³

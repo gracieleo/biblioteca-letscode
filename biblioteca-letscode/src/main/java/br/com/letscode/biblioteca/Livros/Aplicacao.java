@@ -2,6 +2,7 @@ package br.com.letscode.biblioteca.Livros;
 
 import java.util.Scanner;
 
+
 public class Aplicacao {
 
     private static Scanner sc = new Scanner(System.in);
@@ -54,31 +55,24 @@ public class Aplicacao {
         }
     }
 
-
-
-
-        //public static void devolveLivro() {
-          //  boolean ind = false;
-            //int cod2;
-            //System.out.println("Digite codigo do livro que vai devolver: ");
-           // cod2 = sc.nextInt();
-          //  sc.nextLine();
-          //  for (int i = 0; i < rL.size(); i++) {
-                //Livro v = rL.getLivro(i);
-             //   if (v.getIsbn() == cod2 && LocalDateTime.now().isEqual(dataDevolucao)) {
-                    //v.setDataEmprestimo(null);
-                    //ind = true;
-                  //  System.out.println("livro codigo " + v.getIsbn() + " devolvido!\n");
-                //}else{
-                //    System.out.println("Devolução fora do prazo, você será punido em " + diasPunicao);
-              //  }
-            //}
-           // if (ind == false) {
-         //       System.out.println("Livro não encontrado.\n");
-       //     }
-     //   }
-
-
+        public static void devolveLivro() {
+            boolean indice = false;
+            String cod;
+            System.out.println("Digite codigo do livro que vai devolver: ");
+            cod = sc.nextLine();
+            //sc.nextLine();
+            for (int i = 0; i < rL.size(); i++) {
+                Livro v = rL.getLivro(i);
+                if (v.getIsbn() ==  cod) {
+                    v.setDataEmprestimo(null);
+                    indice = true;
+                    System.out.println("livro codigo " + v.getIsbn() + " devolvido!");
+                }
+                if (indice == false) {
+                    System.out.print("Livro não encontrado.\n");
+                }
+            }
+        }
 
 
 
@@ -96,21 +90,17 @@ public class Aplicacao {
         rL.addLivro(l4);
         rL.addLivro(l5);
 
-        //ALUNOS
-        //PROFESSOR
-
 
         int op;
         do {
             System.out.println("Menu Biblioteca Let's Code:\n ");
             System.out.println("0 - sair ");
             System.out.println("1 - adicionar livro ");
-            System.out.println("2 - adicionar aluno ");
-            System.out.println("3 - adicionar professor ");
-            System.out.println("4 - emprestar livro");
-            System.out.println("5 - devolver livro ");
-            System.out.println("6 - listar livros ");
-            System.out.println("7 - listar livros disponiveis ");
+            System.out.println("2 - adicionar usuario ");
+            System.out.println("3 - emprestar livro");
+            System.out.println("4 - devolver livro ");
+            System.out.println("5 - listar livros ");
+            System.out.println("6 - listar livros disponiveis ");
             System.out.println("Opção: ");
             op = sc.nextInt();
             sc.nextLine();
@@ -123,21 +113,18 @@ public class Aplicacao {
                     adicionaLivro();
                     break;
                 case 2:
-                    //adicionarAluno();
+                    //adicionarUsuario();
                     break;
                 case 3:
-                    //adicionarProfessor();
-                    break;
-                case 4:
                     //emprestarLivro();
                     break;
-                case 5:
-                   // devolveLivro();
+                case 4:
+                    devolveLivro();
                     break;
-                case 6:
+                case 5:
                     mostrarTodosLivros();
                     break;
-                case 7:
+                case 6:
                     mostrarLivrosDisponiveis();
                     break;
                 default:

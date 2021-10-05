@@ -10,12 +10,13 @@ public class RegistroLivro {
 
 
     public RegistroLivro(){
-        rL = new ArrayList<Livro>();
+        this.rL = new ArrayList<Livro>();
     }
 
     public void addLivro(Livro livro){
         rL.add(livro);
     }
+
 
     public Livro getLivro (int indice){
         return rL.get(indice);
@@ -24,6 +25,7 @@ public class RegistroLivro {
     public int size(){
         return rL.size();
     }
+
 
 
 }
